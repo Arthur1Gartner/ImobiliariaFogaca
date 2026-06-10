@@ -16,6 +16,7 @@ import {
   Users,
   X
 } from "lucide-react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import {
   archiveProperty,
   brand,
@@ -261,6 +262,7 @@ export function App() {
           onSave={handleSave}
         />
       ) : null}
+      <SpeedInsights />
     </div>
   );
 }

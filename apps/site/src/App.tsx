@@ -17,6 +17,7 @@ import {
   Star,
   X
 } from "lucide-react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import {
   brand,
   fetchPublishedProperties,
@@ -344,6 +345,7 @@ export function App() {
           </div>
         </div>
       ) : null}
+      <SpeedInsights />
     </>
   );
 }
