@@ -4,9 +4,11 @@ import { defineConfig } from "vite";
 
 const workspaceRoot = resolve(import.meta.dirname);
 const appRoot = resolve(workspaceRoot, "apps/dashboard");
+const base = process.env.VITE_DASHBOARD_BASE_PATH ?? "/";
 
 export default defineConfig({
   root: appRoot,
+  base,
   cacheDir: resolve(workspaceRoot, "node_modules/.vite-dashboard"),
   plugins: [react()],
   resolve: {
